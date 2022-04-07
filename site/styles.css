@@ -4,21 +4,15 @@
 
 .status {
   text-align: center;
-  color: #00ff00;
+  color: #ffff00;
 }
 
 .button {
   background-color: #ooo;
 }
 
-#redfox {
-  position: relative;
-  text-align: right;
-}
-
 .switch {
   position: relative;
-  float: left
   display: inline-block;
   width: 34px;
   height: 34px;
