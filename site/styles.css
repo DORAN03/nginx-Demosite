@@ -1,5 +1,23 @@
+#title {
+  text-align: center;
+}
+
+.status {
+  text-align: center;
+  color: #00ff00;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 60px;
+  background-color: #ooo;
+}
+
 .switch {
   position: relative;
+  float: left
   display: inline-block;
   width: 34px;
   height: 34px;
