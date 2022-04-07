@@ -11,16 +11,16 @@
   background-color: #000;
   width: 230px;
   height: auto;
-  margin: 30px;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
 }
 
 #redfox {
   color: #fff;
   display: inline-block;
   text-align: center;
-  margin: 30px;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .switch {
