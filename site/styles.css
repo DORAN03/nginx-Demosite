@@ -10,9 +10,14 @@
 .button {
   position: relative;
   display: inline-block;
-  width: 150px;
-  height: 60px;
+  width: auto;
+  height: auto;
   background-color: #ooo;
+}
+
+#redfox {
+  position: relative;
+  text-align: right;
 }
 
 .switch {
