@@ -9,10 +9,13 @@
 
 .button {
   background-color: #000;
+  width: auto;
+  height: auto;
 }
 
 #redfox {
   color: #fff;
+  display: inline-block;
   position: relative;
   text-align: center;
 }
