@@ -5,7 +5,7 @@
   <title>RAISA || Protocols</title>
   <script>
     var audio = new Audio('IMG-1254.mp3'),
-    cenaCheckbox = document.getElementById('switch'),
+    cenaCheckbox = document.getElementByClass('switch'),
     LethalGas = function () {
       if (cenaCheckbox.checked) {
         audio.play();
@@ -21,7 +21,7 @@
   </div>
   <br>
   <div class=button>
-    <label class="switch" id="switch" onchange="LethalGas();">
+    <label class="switch" onchange="LethalGas();">
       <input type="checkbox">
       <span class="slider round"></span>
     </label>
