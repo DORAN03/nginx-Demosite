@@ -3,18 +3,31 @@
 <head>
   <link href="styles.css" type="text/css" rel="stylesheet">
   <title>RAISA || Protocols</title>
+  <script>
+    var source = "IMG-1254.mp3"
+    var audio = document.createElement("audio");
+    audio.load()
+    audio.addEventListener("load", function() {
+      audio.play();
+    }, true);
+    audio.src = source;
+
+    $("#playBtn").click(function() {
+      audio.play();
+    });
+
+    $("#pauseBtn").click(function() {
+      audio.pause();
+    });
+
+    $("#stopBtn").click(function() {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  </script>
 </head>
 
 <body>
-  
-    <script>
-    var audio = new Audio('IMG-1254.mp3'),
-    cenaCheckbox = document.getElementById('cena'),
-    LethalGas = function () {
-      if (cenaCheckbox.checked) {
-        Audio.play();
-    };
-  </script>
   
   <div class=header>
     <h1 id=title>RAISA || Site Terminal System</h1>
@@ -23,10 +36,12 @@
   <br>
   <div class=button>
     <label class="switch">
-      <input type="checkbox" id="cena" onchange="LethalGas();">
+      <input type="checkbox" id="playBtn" onchange="LethalGas();">
       <span class="slider round"></span>
     </label>
     <a id=redfox href="./thrasher.html">Thrasher</p>
   </div>
+  <a id="pauseBtn">Pause All</a>
+  <a id="stopBtn">Reset System</a>
   
 </body>
