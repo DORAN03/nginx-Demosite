@@ -3,6 +3,15 @@
 <head>
   <link href="styles.css" type="text/css" rel="stylesheet">
   <title>RAISA || Protocols</title>
+  <script>
+    var audio = new Audio('name.mp3'),
+    cenaCheckbox = document.getElementById('switch'),
+    myfunction = function () {
+      if (cenaCheckbox.checked) {
+        audio.play();
+      }
+    };
+  </script>
 </head>
 
 <body>
@@ -12,7 +21,7 @@
   </div>
   <br>
   <div class=button>
-    <label class="switch">
+    <label class="switch" id="switch">
       <input type="checkbox">
       <span class="slider round"></span>
     </label>
